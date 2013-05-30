@@ -1,4 +1,9 @@
 # -*- coding:utf-8 -*-
+'''
+다음 두 블로그를 참조
+http://erezsh.wordpress.com/2012/11/18/how-to-write-a-calculator-in-50-python-lines-without-eval/
+http://blog.83rpm.com/archives/882
+'''
 import re
 
 
@@ -38,6 +43,7 @@ def MyCalc(exp):
             return int(syms[0]) + int(syms[2])
         if '-' in syms:
             return int(syms[0]) - int(syms[2])
+
 
     symbols = re.findall('[[\d.]+|\(|\)|\+|\-|\/|\*|]', exp)
     return calculator(symbols)

@@ -52,8 +52,8 @@ class TestCalculator(unittest.TestCase):
     def setUp(self):
         self.exp1 = '3 + 1'
         self.exp2 = '3 + 4 - 2'
-        self.exp3 = '2 + 5 * 3 -2'
-        self.exp4 = '( 3 + 6 ) / 4 * 2 - 5'
+        self.exp3 = '2.0 + 5 * 3 -2'
+        self.exp4 = '( 3 + 6 ) / 4 * ( 2 - 5 )'
         self.exp5 = '10 + ( 2 + 5 * ( 3 - 1 ) * 2 ) * 6'
 
     def testCalulator(self):
