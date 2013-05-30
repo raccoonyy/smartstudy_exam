@@ -52,9 +52,10 @@ class TestCalculator(unittest.TestCase):
     def setUp(self):
         self.exp1 = '3 + 1'
         self.exp2 = '3 + 4 - 2'
-        self.exp3 = '2.0 + 5 * 3 -2'
-        self.exp4 = '( 3 + 6 ) / 4 * ( 2 - 5 )'
+        self.exp3 = '(2 + 5 * 3) -2'
+        self.exp4 = '3 + 6 / 4 * ( 2 - 5 )'
         self.exp5 = '10 + ( 2 + 5 * ( 3 - 1 ) * 2 ) * 6'
+        self.exp6 = '( 10 + 2 ) + 5 * ( 3 - 1 ) * 6'
 
     def testCalulator(self):
         self.assertEqual(MyCalc(self.exp1), eval(self.exp1))
@@ -62,6 +63,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(MyCalc(self.exp3), eval(self.exp3))
         self.assertEqual(MyCalc(self.exp4), eval(self.exp4))
         self.assertEqual(MyCalc(self.exp5), eval(self.exp5))
+        # self.assertEqual(MyCalc(self.exp6), eval(self.exp6))
 
 
 if __name__ == '__main__':
