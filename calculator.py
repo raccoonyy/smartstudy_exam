@@ -1,4 +1,8 @@
 # -*- coding:utf-8 -*-
+'''
+다음 블로그를 참조
+http://erezsh.wordpress.com/2012/11/18/how-to-write-a-calculator-in-50-python-lines-without-eval/
+'''
 import re
 
 
