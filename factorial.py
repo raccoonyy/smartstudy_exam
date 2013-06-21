@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+# 팩토리얼 구하기
 
 
 def MyFactorial(n):

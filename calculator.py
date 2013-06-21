@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+# 간단한 계산기(수식은 모두 올바르게 입력되었다고 가정)
 '''
 다음 블로그를 참조
 http://erezsh.wordpress.com/2012/11/18/how-to-write-a-calculator-in-50-python-lines-without-eval/

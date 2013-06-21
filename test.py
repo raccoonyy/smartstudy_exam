@@ -10,16 +10,14 @@ from calculator import MyCalc
 from calculator2 import MyCalc2
 
 
+# 소수를 받아 반올림한 정수를 반환
 class TestMyRound(unittest.TestCase):
-    def setUp(self):
-        self.no_round_f = 10.01
-        self.round_f = 10.61
-
     def testRound(self):
-        self.assertEqual(MyRound(self.no_round_f), 10)
-        self.assertEqual(MyRound(self.round_f), 11)
+        self.assertEqual(MyRound(10.01), 10)
+        self.assertEqual(MyRound(10.61), 11)
 
 
+# 팩토리얼 구하기
 class TestMyFactorial(unittest.TestCase):
     def testFactorial(self):
         self.assertEqual(MyFactorial(1), 1)
@@ -29,6 +27,7 @@ class TestMyFactorial(unittest.TestCase):
         self.assertEqual(MyFactorial(10), 3628800)
 
 
+# 문자열 뒤집기
 class TestReverse(unittest.TestCase):
     def setUp(self):
         self.string = 'test_string'
@@ -37,6 +36,7 @@ class TestReverse(unittest.TestCase):
         self.assertEqual(reverse(self.string), "".join(reversed(self.string)))
 
 
+# 대소문자 상관없이 문자 순서 비교
 class TestMyStricmp(unittest.TestCase):
     def setUp(self):
         self.a = 'ABc'
@@ -49,6 +49,7 @@ class TestMyStricmp(unittest.TestCase):
         self.assertEqual(MyStricmp(self.c, self.a), 1)
 
 
+# 간단한 계산기(수식은 모두 올바르게 입력되었다고 가정)
 class TestCalculator(unittest.TestCase):
     def setUp(self):
         self.exp1 = '3 + 1'
